@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+   background-image: url(./img/bck.png);
+   background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    
+    padding: 2rem;
+    /* border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+.robo{
+    width: 214px;
+    height: 60px;
+    top: 302px;
+    left: 108px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 1);
+
+    margin: 0 auto 1rem;
+}
+.logo {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.input-group span {
+    margin-right: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.visibility-toggle {
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-link {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.social-login {
+    text-align: center;
+    
+}
+
+.social-icons {
+    display: inline-block; /* Ensure the container wraps around its content */
+    border: 1px solid rgba(0, 0, 0, 1); /* Border style */
+    border-radius: 20px; /* Border radius */
+    padding: 10px; /* Padding around the images */
+    width: fit-content;
+}
+
+.social-icons img {
+    width: 30px; 
+    height: 30px; 
+    margin: 0 5px; 
+    cursor: pointer;
+    opacity: 0px;
+
+}

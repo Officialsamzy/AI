@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="./index.html">  <button class="back-button"><img src="./img/left.png" alt=""></button> </a>
+            <div class="header-icons">
+                <img src="./img/Logo small.png" alt="Profile Icon">
+            </div>
+        </header>
+        <main>
+            <h1>Personal Data</h1>
+            <div class="profile-picture">
+                <img src="./img/woman.png" alt="Profile Picture">
+            </div>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" value="Young John" class="colored-input">
+
+                <label for="gender">Gender</label>
+                <input type="text" id="gender" name="gender" value="Male" class="colored-input">
+
+                <label for="dob">Date Of Birth</label>
+                <input type="text" id="dob" name="dob" value="12-05-1999" class="colored-input">
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" value="UK" class="colored-input">
+
+                <label for="medical-report">Upload your current medical report</label>
+                <input type="file" id="medical-report" name="medical-report" class="colored-input">
+
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <nav>
+            <ul class="navigation">
+                <li><a href="./home.html" ><img src="./img/hou.png" alt=""></a></li>
+                <li><a href="./index.html"><img src="./img/mes.png" alt=""></a></li>
+                <!-- <li><a href="#"><img src="./img/per.png" alt=""></a></li> -->
+                <li><a href="./profile.html" class="active"><img src="./img/usw.png" alt=""></a></li>
+            
+            
+        </ul>
+        </nav>
+    </div>
+</body>
+</html>

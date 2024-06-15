@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboHealth - Log-in</title>
+    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0">
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <img src="./img/Logo.png" alt="RoboHealth Logo" class="logo">
+            <div class="robo">RoboHealth</div>
+            <form id="loginForm">
+                <div class="input-group">
+                    <span class="material-symbols-outlined">email</span>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <span class="material-symbols-outlined">lock</span>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <!-- <span class="material-symbols-outlined visibility-toggle">visibility_off</span> -->
+                </div>
+                <button type="submit" class="login-button">Sign in</button>
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <div class="signup-link">
+                    First timer? <a href="signup.html">Create an account</a>
+                </div>
+                <div class="social-login">
+                    <p>or continue using</p>
+                    <div class="social-icons">
+                        <img src="./img/google-icon.png.png" alt="Google Login">
+                        <img src="./img/apple-icon.png" alt="Apple Login">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./sign-in.js"></script>
+</body>
+</html>

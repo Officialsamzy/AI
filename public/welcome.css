@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   background-image: url(./img/bck.png);
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+h1 {
+    width: 300;
+    font-family: Poppins;
+font-size: 48px;
+font-weight: 500;
+line-height: 48px;
+letter-spacing: -0.06em;
+text-align: center;
+    font-size: 24px;
+    color: rgba(0, 0, 0, 1);
+    margin: 20px 0;
+}
+
+p {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.58px;
+    letter-spacing: -0.06em;
+    text-align: center;
+    
+}
+
+.smiley {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+}
+
+button {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin: 20px auto 0;
+    background: rgba(0, 0, 0, 1);
+    color: #fff;
+    border: none;
+    border-radius: 38px;
+    cursor: pointer;
+    font-size: 16px;
+}
