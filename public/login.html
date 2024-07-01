@@ -14,6 +14,7 @@
             <img src="./img/Logo.png" alt="RoboHealth Logo" class="logo">
             <div class="robo">RoboHealth</div>
             <form id="loginForm">
+                <p style="color: red; font-weight: bold;" id="passError"></p>
                 <div class="input-group">
                     <span class="material-symbols-outlined">email</span>
                     <input type="email" id="email" name="email" placeholder="Email Address" required>
@@ -23,12 +24,12 @@
                     <input type="password" id="password" name="password" placeholder="Password" required>
                     <!-- <span class="material-symbols-outlined visibility-toggle">visibility_off</span> -->
                 </div>
-                <button type="submit" class="login-button">Sign in</button>
+                <button type="submit" id="RoboHealthLogin" class="login-button">Sign in</button>
                 <div class="forgot-password">
                     <a href="#">Forgot Password?</a>
                 </div>
                 <div class="signup-link">
-                    First timer? <a href="signup.html">Create an account</a>
+                    First timer? <a href="sign-up.html">Create an account</a>
                 </div>
                 <div class="social-login">
                     <p>or continue using</p>
@@ -40,6 +41,9 @@
             </form>
         </div>
     </div>
-    <script src="./sign-in.js"></script>
+    <!-- <script src="./sign-in.js"></script> -->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/sweetalert.js"></script>
 </body>
 </html>

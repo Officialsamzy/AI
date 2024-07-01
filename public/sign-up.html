@@ -7,33 +7,35 @@
     <link rel="stylesheet" href="sign.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0">
+    
 </head>
 <body>
     <div class="container">
         <div class="login-form">
             <img src="./img/Logo.png" alt="RoboHealth Logo" class="logo">
             <div class="robo">RoboHealth</div>
-            <form id="signUpForm">
+            <form id="health_Register">
+                <p style="color: red; font-weight: bold;" id="passError"></p>
                 <div class="input-group">
                     <span class="material-symbols-outlined">account_circle</span>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required autocomplete="off">
+                    <input type="text" id="username" name="fullname" placeholder="Enter your Fullname" required autocomplete="off">
 
                 </div>
                 <div class="input-group">
                     <span class="material-symbols-outlined">email</span>
-                    <input type="email" placeholder="Email Address" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
                 </div>
                 <div class="input-group">
                     <span class="material-symbols-outlined">lock</span>
-                    <input type="password" placeholder="Password" required>
+                    <input type="password" name="password" id="simpUser_Password_val" placeholder="Password" required>
                     <!-- <span class="material-symbols-outlined visibility-toggle">visibility_off</span> -->
                 </div>
                 <div class="input-group">
                     <span class="material-symbols-outlined">lock</span>
-                    <input type="password" placeholder=" Confirm password" required>
+                    <input type="password" name="confirmpass" id="simpUser_Password_con" placeholder=" Confirm password" required>
                     <!-- <span class="material-symbols-outlined visibility-toggle">visibility_off</span> -->
                 </div>
-                <button type="submit" class="login-button">Sign up</button>
+                <button type="submit" id="health_Register_Btn" class="login-button">Sign up</button>
                 <div class="social-login">
                     <p>or continue using</p>
                     <div class="social-icons">
@@ -44,7 +46,10 @@
             </form>
         </div>
     </div>
-    <script src="./sign-in.js"></script>
-    
+    <!-- <script src="./sign-in.js"></script> -->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="js/register.js"></script>
+    <script src="js/sweetalert.js"></script>
 </body>
 </html>
