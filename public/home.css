@@ -72,11 +72,32 @@ header p {
 .main-content {
     text-align: center;
 }
-
-.robot-image img {
+/* .robot{
+    display: inline;
+} */
+ .robot-image{
+    position: relative;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+ }
+.bigRobot {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
+}
+
+.smallRobot{
+    display: inline;
+    max-width: 69px;
+    height: 65px;
+    margin-left: 245px;
+    margin-top: -200px;
+    position: sticky;
+    top: 420px
+    
 }
 
 h2 {
