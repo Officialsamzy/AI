@@ -132,11 +132,12 @@ div.sub-head>p>span{
   color: hsla(45, 100%, 41%, 1);
 }
 p.notes{
+  font: poppins;
   font-size: 20px;
+  font-weight: 500;
   margin-top: 40px;
-  line-height: 20px;
+  line-height: 21.5px;
   
-  text-align: justify;
 }
 .footer{
   margin-top: 137px;
