@@ -199,7 +199,7 @@ header h2 {
 
 .chat-input span {
   align-self: flex-end;
-  color: rgba(255, 239, 189, 1);
+  color: #724ae8;
   cursor: pointer;
   height: 55px;
   display: flex;
