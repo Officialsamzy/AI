@@ -149,3 +149,8 @@ p.notes{
   padding-block: 25px;
   padding-inline: 50px;
 }
+.active{
+  border: 5px solid rgba(205, 209, 70, 1);
+  /* Red border as an example */
+  border-radius: 50%;
+}
