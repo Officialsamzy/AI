@@ -2,6 +2,7 @@
 $(document).ready(function () {
     $("#RoboHealthLogin").click(function (e) {
         e.preventDefault()
+        // console.log("jjjj");
         $.ajax({
             url: "https://hbinnovation.000webhostapp.com/api/login.php",
             type: "POST",
@@ -16,17 +17,21 @@ $(document).ready(function () {
                         text: response.error
                     });
                 } else {
+                    // localStorage.setItem('token', response.token);
                     // Handle success responses
                     swal.fire({
                         title: 'Success!',
                         icon: 'success',
                         text: response.message
                     }).then(() => {
+                        localStorage.setItem('token', response.token);
                         window.location = "home.html"; // Redirect after login
                     });
                 }
             }
         });
     })
+    
 })
+// export JWT_SECRET_KEY="Ahryfc0oGrdfPfUeuo6R45e0GHNjpfiWV6kxdCzgZ+Y="
 
