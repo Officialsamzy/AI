@@ -91,13 +91,24 @@ header p {
 
 .smallRobot{
     display: inline;
-    max-width: 69px;
+    width: 69px;
     height: 65px;
     margin-left: 245px;
     margin-top: -200px;
     position: sticky;
     top: 420px
     
+}
+.sticky-bot{
+    position: fixed;
+    top: 50%;
+    max-width: 69px;
+    height: 65px;
+    right: 50px;
+}
+.sticky-bot img{
+    width: 69px;
+    height: 65px;
 }
 
 h2 {
