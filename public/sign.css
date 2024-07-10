@@ -2,8 +2,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 
-   background-image: url(./img/bck.png);
-   background-repeat: repeat;
+    background-image: url(./img/bck.png);
+    background-repeat: repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +13,13 @@ body {
 .container {
     width: 100%;
     max-width: 400px;
-    
+
     padding: 2rem;
     /* border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
-.robo{
+
+.robo {
     width: 214px;
     height: 60px;
     top: 302px;
@@ -32,6 +33,7 @@ body {
 
     margin: 0 auto 1rem;
 }
+
 .logo {
     display: block;
     margin: 0 auto 1rem;
@@ -81,22 +83,44 @@ body {
 
 .social-login {
     text-align: center;
-    
+
 }
 
 .social-icons {
-    display: inline-block; /* Ensure the container wraps around its content */
-    border: 1px solid rgba(0, 0, 0, 1); /* Border style */
-    border-radius: 20px; /* Border radius */
-    padding: 10px; /* Padding around the images */
+    display: inline-block;
+    /* Ensure the container wraps around its content */
+    border: 1px solid rgba(0, 0, 0, 1);
+    /* Border style */
+    border-radius: 20px;
+    /* Border radius */
+    padding: 10px;
+    /* Padding around the images */
     width: fit-content;
 }
 
 .social-icons img {
-    width: 30px; 
-    height: 30px; 
-    margin: 0 5px; 
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
     cursor: pointer;
     opacity: 0px;
 
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding-right: 40px;
+    /* Adjust padding to make space for the icon */
+}
+
+.visibility-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }

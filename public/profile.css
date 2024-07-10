@@ -60,13 +60,23 @@ form label {
 }
 
 form input[type="text"],
-form input[type="file"] {
-    width: 80%;
+form input[type="file"],
+form input[type="date"], 
+form select {
+    width: 480px;
+    height: 50px; /* Set a fixed height */
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
 }
+
+form input[type="file"] {
+    padding: 8px; /* Adjust padding for file input to align with other inputs */
+    height: 50px; /* Set the same height */
+}
+
 
 .colored-input {
     background-color: rgba(255, 239, 189, 1);

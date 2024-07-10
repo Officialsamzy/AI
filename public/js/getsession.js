@@ -1,19 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Retrieve and decode multiple tokens from localStorage
-    const tokens = []; // Array to store decoded tokens
-
-    // Example tokens stored in localStorage (replace with your actual implementation)
-    const token = localStorage.getItem('token'); // Replace 'token1' with your actual key
-    // const token2 = localStorage.getItem('token2'); // Replace 'token2' with your actual key
-
-    if (token) {
-        tokens.push(decodeJwt(token)); // Assuming decodeJwt is your decoding function
-    }
-    // if (token2) {
-    //     tokens.push(decodeJwt(token2)); // Assuming decodeJwt is your decoding function
-    // }
-
-    // Function to decode JWT token (example)
+    // Function to decode JWT token
     function decodeJwt(token) {
         const base64Url = token.split('.')[1];
         const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
@@ -24,12 +10,34 @@ document.addEventListener('DOMContentLoaded', function() {
         return JSON.parse(jsonPayload);
     }
 
-    // Update HTML dynamically based on decoded tokens
+    // Function to check if the token is expired
+    function isTokenExpired(decodedToken) {
+        const currentTime = Math.floor(Date.now() / 1000); // Get current time in seconds
+        return decodedToken.exp < currentTime; // Check if token is expired
+    }
+
+    // Retrieve token from localStorage
+    const token = localStorage.getItem('token');
+    
+    if (!token) {
+        // Redirect to login page if no token is found
+        window.location.href = "login.html";
+        return;
+    }
+
+    const decodedToken = decodeJwt(token);
+    // console.log(decodedToken)
+    if (isTokenExpired(decodedToken)) {
+        // Redirect to login page if token is expired
+        window.location.href = "login.html";
+        return;
+    }
+
+    // Update HTML dynamically based on decoded token
     const greetingElement = document.getElementById('greeting');
-    if (tokens.length > 0) {
-        // Example: Use the first user's name to update greeting
-        greetingElement.textContent = 'Hi, ' + tokens[0].data.name;
+    if (decodedToken && decodedToken.data && decodedToken.data.name) {
+        greetingElement.textContent = 'Hi, ' + decodedToken.data.name;
     } else {
-        greetingElement.textContent = 'Hi there'; // Fallback greeting if no tokens
+        greetingElement.textContent = 'Hi there'; // Fallback greeting if no name is found
     }
 });
